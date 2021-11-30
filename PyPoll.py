@@ -21,6 +21,12 @@ file_to_save = os.path.join("Analysis","election_analysis.txt")
 # Total Votes Counter
 Total_Votes = 0
 
+# Percent Votes Counter
+Percent_Votes = 0.00
+
+# Winning Vote Counter
+Winner_Vote_count = 0
+
 # Initialize an empty list to later hold unique candidate names
 Candidate_Name_List = []
 
@@ -45,9 +51,34 @@ with open(file_to_load) as election_data:
 
       Candidate_Ballot_Dict[Candidate_Name] += 1
 
-    print(f"\nTotal votes cast in the election: {Total_Votes}\n")
+    print(f"\nTotal votes cast in the election: {Total_Votes:,}\n")
+    print(f"--------------------------------------------")
+    print(f"------------Election Summary----------------")
+    print(f"--------------------------------------------\n")
+
     for key,value in Candidate_Ballot_Dict.items():
-      print(f"{key} secured {value} votes.\n")
+      Percent_Votes = (value/Total_Votes)*100
+      print(f"{key}: {Percent_Votes:.2f} % ({value:,}).\n")
+      if value > Winner_Vote_count:
+          Winner_Vote_count = value
+          Winner = key
+          Winner_Percent = Percent_Votes
+
+    print(f"--------------------------------------------\n")
+
+    # Print the winner and vote count
+    Winning_Candidate_Summary = (
+      f"---------------------------------------------\n"
+      f"Winner Summary\n"
+      f"---------------------------------------------\n"
+      f"Winner: {Winner}\n"
+      f"Winning VOte Count: {Winner_Vote_count:,}\n"
+      f"Winning Percentage: {Winner_Percent:.2f} %\n"
+      f"---------------------------------------------\n"
+    )
+    print(Winning_Candidate_Summary)
+
+    print(f"{Winner} won this election with {Winner_Vote_count:,} votes and {Winner_Percent:.2f} % of total votes cast.\n")
 
 with open(file_to_save,"w") as election_output:
 
