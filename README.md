@@ -52,7 +52,7 @@ The analysis of the election show that:
  - Winning Vote Count: 272,892
  - Winning Percentage: 73.8 %
  - ---------------------------------------------
- ![2017_returns](https://github.com/abhi82git/stock-analysis/blob/1195e40e0bb244574b20f27470eefdc9e0f99ad8/Resources/2017_Returns.png)
+ ![Election_Winner_Candidate_Summary](https://github.com/abhi82git/Election_Analysis/blob/c8f0125be115e63dd32ddfa5ddb0fbd7db6da60c/Resources/Candidate_Votes_and_Winner.png)
  
  ## Election Audit Summary
  We were able to figure out quite a lot of info about the election using the script. Apart from using this script for calcukating the results that we did, we can use this scripts for the following elections and other resuls too:
