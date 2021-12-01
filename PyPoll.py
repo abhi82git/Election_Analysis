@@ -53,16 +53,16 @@ with open(file_to_load) as election_data:
 
     print(f"\nTotal votes cast in the election: {Total_Votes:,}\n")
     print(f"--------------------------------------------")
-    print(f"------------Election Summary----------------")
-    print(f"--------------------------------------------\n")
+    print(f"Election Summary")
+    print(f"--------------------------------------------")
 
     for key,value in Candidate_Ballot_Dict.items():
-      Percent_Votes = (value/Total_Votes)*100
-      print(f"{key}: {Percent_Votes:.2f} % ({value:,}).\n")
-      if value > Winner_Vote_count:
-          Winner_Vote_count = value
-          Winner = key
-          Winner_Percent = Percent_Votes
+     Percent_Votes = (value/Total_Votes)*100
+     print(f"{key}: {Percent_Votes:.2f} % ({value:,}).")
+     if value > Winner_Vote_count:
+       Winner_Vote_count = value
+       Winner = key
+       Winner_Percent = Percent_Votes
 
     print(f"--------------------------------------------\n")
 
@@ -72,16 +72,31 @@ with open(file_to_load) as election_data:
       f"Winner Summary\n"
       f"---------------------------------------------\n"
       f"Winner: {Winner}\n"
-      f"Winning VOte Count: {Winner_Vote_count:,}\n"
+      f"Winning Vote Count: {Winner_Vote_count:,}\n"
       f"Winning Percentage: {Winner_Percent:.2f} %\n"
       f"---------------------------------------------\n"
     )
     print(Winning_Candidate_Summary)
 
-    print(f"{Winner} won this election with {Winner_Vote_count:,} votes and {Winner_Percent:.2f} % of total votes cast.\n")
-
 with open(file_to_save,"w") as election_output:
 
     # Write some data to output file
-    election_output.write("Counties in the Election\n----------------------------\nArapahoe\nDenver\nJefferson")
+    # election_output.write("Counties in the Election\n----------------------------\nArapahoe\nDenver\nJefferson")
+    Election_Summary = (
+      f"--------------------------------------------\n"
+      f"Election Results\n"
+      f"--------------------------------------------\n"
+      f"Total Votes: {Total_Votes:,}\n"
+      f"--------------------------------------------\n"
+    )
+    election_output.write(Election_Summary)
+
+    for key,value in Candidate_Ballot_Dict.items():
+      Percent_Votes = (value/Total_Votes)*100
+      Votes_Summary = (f"{key}: {Percent_Votes:.2f} % ({value:,}).\n")
+      election_output.write(Votes_Summary)
+      if value > Winner_Vote_count:
+          Winner_Vote_count = value
+          Winner = key
+          Winner_Percent = Percent_Votes
 
