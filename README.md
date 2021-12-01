@@ -19,18 +19,21 @@ A Colorado Board of Elecion emplyee has given you the following tasks to complet
 ## Summary
 The analysis of the election show that:
 - There were 369,711 votes cast in the election.
+![Total_Votes](https://github.com/abhi82git/Election_Analysis/blob/068845e7f4a4b38f75d2462542eb43781a0f7df1/Resources/Total_Votes.png)
 
-- The elecion was conducted across3 counties:
+
+- The elecion was conducted across 3 counties:
  - Jefferson
  - Denver
  - Arapahoe
 
-- Following is the breakdownof vote total and percentages from each county:
+- Following is the breakdown of vote totals and percentages from each county:
  - Jefferson: 10.5 % (38,855).
  - Denver: 82.8 % (306,055).
  - Arapahoe: 6.7 % (24,801).
 
-- From the above snapshit it is evident that Denver county had the biggest turnout.
+- From the above snapshot it is evident that Denver county had the biggest turnout.
+![County_Summary_Biggest_Turnout](https://github.com/abhi82git/Election_Analysis/blob/068845e7f4a4b38f75d2462542eb43781a0f7df1/Resources/County_Summary_and_Biggest_Turnout.png)
 
 - The candidates were:
  - Charles Casper Stockham
@@ -49,6 +52,7 @@ The analysis of the election show that:
  - Winning Vote Count: 272,892
  - Winning Percentage: 73.8 %
  - ---------------------------------------------
+ ![2017_returns](https://github.com/abhi82git/stock-analysis/blob/1195e40e0bb244574b20f27470eefdc9e0f99ad8/Resources/2017_Returns.png)
  
  ## Election Audit Summary
  We were able to figure out quite a lot of info about the election using the script. Apart from using this script for calcukating the results that we did, we can use this scripts for the following elections and other resuls too:
