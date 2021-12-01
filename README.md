@@ -22,30 +22,30 @@ The analysis of the election show that:
 ![Total_Votes](https://github.com/abhi82git/Election_Analysis/blob/068845e7f4a4b38f75d2462542eb43781a0f7df1/Resources/Total_Votes.png)
 
 
-- The elecion was conducted across 3 counties:
+### The elecion was conducted across 3 counties:
  - Jefferson
  - Denver
  - Arapahoe
 
-- Following is the breakdown of vote totals and percentages from each county:
+### Following is the breakdown of vote totals and percentages from each county:
  - Jefferson: 10.5 % (38,855).
  - Denver: 82.8 % (306,055).
  - Arapahoe: 6.7 % (24,801).
 
-- From the above snapshot it is evident that Denver county had the biggest turnout.
+### From the above snapshot it is evident that Denver county had the biggest turnout.
 ![County_Summary_Biggest_Turnout](https://github.com/abhi82git/Election_Analysis/blob/068845e7f4a4b38f75d2462542eb43781a0f7df1/Resources/County_Summary_and_Biggest_Turnout.png)
 
-- The candidates were:
+### The candidates were:
  - Charles Casper Stockham
  - Diana DeGette
  - Raymon Anthony Doane
  
-- The candidate results were:
+### The candidate results were:
  - Charles Casper Stockham received 23.0 % of votes and 85,213 number of votes.
  - Diana DeGette received 73.8 % of votes and 272,892 number of votes.
  - Raymon Anthony Doane received 3.1 %  of votes and 11,606 number of votes.
  
-- The winner of the elction was:
+### The winner of the elction was:
  - Winner Summary
  - ---------------------------------------------
  - Winner: Diana DeGette
